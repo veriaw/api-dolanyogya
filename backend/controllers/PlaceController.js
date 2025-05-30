@@ -21,7 +21,7 @@ export const getPlacesByCategory = async (req, res) => {
 
     const response = await Place.findAll({
       where: {
-        category: category
+        category
       }
     });
 
