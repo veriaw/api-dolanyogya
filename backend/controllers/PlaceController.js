@@ -17,7 +17,7 @@ export const getAllPlaces = async (req, res) => {
 export const getPlacesByCategory = async (req, res) => {
   try {
     
-    const category = req.body;
+    const { category } = req.body;
 
     const response = await Place.findAll({
       where: {
