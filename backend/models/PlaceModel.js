@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import db from "../configs/Database.js"; // pastikan kamu sudah setup koneksi Sequelize di sini
 
-const Place = db.define('Places', {
+const Place = db.define('places', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
